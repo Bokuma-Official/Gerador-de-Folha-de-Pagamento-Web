@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerador-de-Folha-de-Pagamento-Web", "Gerador-de-Folha-de-Pagamento-Web\Gerador-de-Folha-de-Pagamento-Web.csproj", "{9196C57D-CA45-43E1-884B-D7267CFB46AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gerador-de-Folha-de-Pagamento-Web", "Gerador-de-Folha-de-Pagamento-Web\Gerador-de-Folha-de-Pagamento-Web.csproj", "{9C16026F-9698-40A1-8E6C-5AA847C8F96C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9196C57D-CA45-43E1-884B-D7267CFB46AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9196C57D-CA45-43E1-884B-D7267CFB46AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9196C57D-CA45-43E1-884B-D7267CFB46AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9196C57D-CA45-43E1-884B-D7267CFB46AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C16026F-9698-40A1-8E6C-5AA847C8F96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C16026F-9698-40A1-8E6C-5AA847C8F96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C16026F-9698-40A1-8E6C-5AA847C8F96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C16026F-9698-40A1-8E6C-5AA847C8F96C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0C734DEA-87AE-4751-B4C0-5B5AE37ECB39}
+		SolutionGuid = {670C4590-3CD2-478C-A19B-5F753272FA3C}
 	EndGlobalSection
 EndGlobal
