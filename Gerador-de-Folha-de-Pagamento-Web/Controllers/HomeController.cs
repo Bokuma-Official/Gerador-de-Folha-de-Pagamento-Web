@@ -18,7 +18,27 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        public IActionResult Redefinir_Senha()
+        {
+            return View();
+        }
+
+        public IActionResult Menu()
+        {
+            return View();
+        }
+
+        public IActionResult Visualizar_Funcionario()
+        {
+            return View();
+        }
+
+        public IActionResult Visualizar_Folhas_de_Pagamento()
         {
             return View();
         }
