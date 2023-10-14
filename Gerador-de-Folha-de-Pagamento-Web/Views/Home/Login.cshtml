@@ -19,22 +19,22 @@
 
 
                 <h2>LOGIN</h2>
-                <form action="/Home/Menu">
+                <form method="post" action="/Home/Menu">
                     <div class="form">
                         <img src="../img/login/homem-usuario.png" alt="">
-                        <input type="text" required>
-                        <label for="input">USUARIO</label>
+                        <input type="text" name="cpf" required>
+                        <label for="input">CPF</label>
                     </div>
 
                     <div class="form">
                         <img src="../img/login/chaves.png" alt="">
-                        <input type="password" required minlength="8">
+                        <input type="password" name="senha" required minlength="8">
                         <label for="input">SENHA</label>
                     </div>
-                    <a href="/Home/Redefinir_Senha"><h3>Redefinir Senha</h3> </a>
 
-                    <a href="/Home/Menu"> <button type="submit" class="ok-button"> OK </button> </a>
+                    <button type="submit" class="ok-button"> OK </button>
                 </form>
+
             </div>
 
         </div>
