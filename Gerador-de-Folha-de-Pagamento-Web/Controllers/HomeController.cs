@@ -1,22 +1,27 @@
-﻿using Gerador_de_Folha_de_Pagamento_Web.Banco_Dados;
-using Gerador_de_Folha_de_Pagamento_Web.Models;
+﻿using Gerador_de_Folha_de_Pagamento_Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Gerador_de_Folha_de_Pagamento_Web.Data;
 
 namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _context = context;
+        }
+
+        public IActionResult teste()
+        {
+            return View();
         }
 
         public IActionResult Index()
@@ -24,22 +29,32 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult Login()
         {
-            return View();
+            Funcionario_Login _funcionario_login = new Funcionario_Login();
+            return View(_funcionario_login);
         }
 
-        public IActionResult Redefinir_Senha()
+        [HttpPost]
+        public IActionResult Login(Funcionario_Login _funcionario_login)
         {
-            return View();
+            Funcionario_Contexto _funcionario_contexto = new Funcionario_Contexto();
+            var status = _funcionario_contexto.Funcionario.Where(f => f.CPF == _funcionario_login.CPF && f.Senha == _funcionario_login.Senha).FirstOrDefault();
+            if (status == null)
+            {
+                ViewBag.LoginStatus = 0;
+            }
+
+            else
+            {
+                return RedirectToAction("Menu", "Home");
+            }
+
+            return View(_funcionario_login);
         }
 
         public IActionResult Menu()
-        {
-            return View();
-        }
-
-        public IActionResult Visualizar_Funcionario()
         {
             return View();
         }
