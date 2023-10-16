@@ -19,16 +19,6 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
             _logger = logger;
         }
 
-        public IActionResult teste()
-        {
-            return View();
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         [HttpGet]
         public IActionResult Login()
         {
@@ -40,8 +30,9 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
         public IActionResult Login(Funcionario_Login _funcionario_login)
         {
             Funcionario_Contexto _funcionario_contexto = new Funcionario_Contexto();
-            var status = _funcionario_contexto.Funcionario.Where(f => f.CPF == _funcionario_login.CPF && f.Senha == _funcionario_login.Senha).FirstOrDefault();
-            if (status == null)
+            var login = _funcionario_contexto.Funcionario.Where(funcionario => funcionario.CPF == _funcionario_login.CPF && funcionario.Senha == _funcionario_login.Senha).FirstOrDefault();
+
+            if (login == null)
             {
                 ViewBag.LoginStatus = 0;
             }

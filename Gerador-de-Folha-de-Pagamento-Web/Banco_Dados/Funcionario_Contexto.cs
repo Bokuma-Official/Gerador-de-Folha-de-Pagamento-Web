@@ -11,11 +11,13 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Data
     {
         public Funcionario_Contexto()
         {
+
         }
 
         public Funcionario_Contexto(DbContextOptions<Funcionario_Contexto> options)
             : base(options)
         {
+
         }
 
         public virtual DbSet<Funcionario> Funcionario { get; set; }
@@ -24,7 +26,7 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=DESKTOP-1JTSLQO\\SQLEXPRESS;Database=Folha_Pagamento_Ataron;TrustServerCertificate=true;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=MATHEUS-C5\\SQLEXPRESS;Database=Folha_Pagamento_Ataron;TrustServerCertificate=true;Integrated Security=True");
             }
         }
 
@@ -32,24 +34,24 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Data
         {
             modelBuilder.Entity<Funcionario>(entity =>
             {
-                entity.HasKey(e => e.CPF);
+                entity.HasKey(funcionario => funcionario.CPF);
 
-                SetEntityProperties(entity.Property(e => e.CPF), 14);
-                SetEntityProperties(entity.Property(e => e.Senha), 20);
-                SetEntityProperties(entity.Property(e => e.Nome), 40);
-                SetEntityProperties(entity.Property(e => e.Data_Nascimento), 10);
-                SetEntityProperties(entity.Property(e => e.Sexo), 11);
-                SetEntityProperties(entity.Property(e => e.PCD), 3);
-                SetEntityProperties(entity.Property(e => e.PIS), 14);
-                SetEntityProperties(entity.Property(e => e.RG), 12);
-                SetEntityProperties(entity.Property(e => e.Carteira_Trabalho), 20);
-                SetEntityProperties(entity.Property(e => e.Titulo_Eleitor), 14);
-                SetEntityProperties(entity.Property(e => e.Certificado_Militar), 15);
-                SetEntityProperties(entity.Property(e => e.Matricula));
-                SetEntityProperties(entity.Property(e => e.Telefone_Fixo), 14);
-                SetEntityProperties(entity.Property(e => e.Telefone_Celular), 15);
-                SetEntityProperties(entity.Property(e => e.Email), 40);
-                SetEntityProperties(entity.Property(e => e.Dependentes));
+                SetEntityProperties(entity.Property(funcionario => funcionario.CPF), 14);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Senha), 20);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Nome), 40);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Data_Nascimento), 10);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Sexo), 11);
+                SetEntityProperties(entity.Property(funcionario => funcionario.PCD), 3);
+                SetEntityProperties(entity.Property(funcionario => funcionario.PIS), 14);
+                SetEntityProperties(entity.Property(funcionario => funcionario.RG), 12);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Carteira_Trabalho), 20);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Titulo_Eleitor), 14);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Certificado_Militar), 15);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Matricula));
+                SetEntityProperties(entity.Property(funcionario => funcionario.Telefone_Fixo), 14);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Telefone_Celular), 15);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Email), 40);
+                SetEntityProperties(entity.Property(funcionario => funcionario.Dependentes));
             });
 
             OnModelCreatingPartial(modelBuilder);

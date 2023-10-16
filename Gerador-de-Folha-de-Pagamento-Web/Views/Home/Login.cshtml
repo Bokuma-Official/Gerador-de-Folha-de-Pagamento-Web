@@ -2,14 +2,15 @@
 @{
     ViewData["Title"] = "Login";
 }
-<link rel="stylesheet" href="../css/login.css">
 
+<link rel="stylesheet" href="../css/login.css">
+<title>Login</title>
 
 <section>
     <div class="form-box">
         <div class="itens-box">
             <div class="logo">
-                <img src="../img/logo.jfif" alt="">
+                <img src="../img/logo.jfif" alt="logo_ataron">
             </div>
 
             <div class="formulario">
@@ -17,26 +18,25 @@
         
                         @using (Html.BeginForm("Login", "Home", FormMethod.Post))
                         {
-
                             if (ViewBag.LoginStatus != null)
                             {
                                 if (ViewBag.LoginStatus == 0)
                                 {
-                                    <div class="alert alert-danger">CPF ou Senha Inválidos</div>
+                                    <h1>CPF ou Senha Inválidos</h1>
                                 }
                             }
+
                     <div class="form">
-                        <img src="../img/login/homem-usuario.png" alt="">
-                         @Html.TextBoxFor(f => f.CPF, new { @class = "form-control", @placeholder = "CPF" })
+                        <img src="../img/login/homem-usuario.png" alt="homem">
+                         @Html.TextBoxFor(funcionario => funcionario.CPF, new {@placeholder = "CPF"})
                     </div>
 
                     <div class="form">
-                        <img src="../img/login/chaves.png" alt="">
-                        @Html.PasswordFor(f => f.Senha, new { @class = "form-control", @placeholder = "Senha" })
+                        <img src="../img/login/chaves.png" alt="chaves">
+                        @Html.PasswordFor(funcionario => funcionario.Senha, new {@placeholder = "Senha"})
                     </div>
-                            <div class="form-group">
-                                <button type="submit" value="Login" class="ok-button">   OK   </button>
-                            </div>
+                            
+                    <button type="submit" value="Login" class="button">   Fazer Login   </button>
                         }
             </div>
         </div>
