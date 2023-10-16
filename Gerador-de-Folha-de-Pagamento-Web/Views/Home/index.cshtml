@@ -3,7 +3,7 @@
     ViewData["Title"] = "Login";
 }
 
-<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/index.css">
 <title>Login</title>
 
 <section>
@@ -16,7 +16,7 @@
             <div class="formulario">
                 <h2>LOGIN</h2>
         
-                        @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+                        @using (Html.BeginForm("index", "Home", FormMethod.Post))
                         {
                             if (ViewBag.LoginStatus != null)
                             {
@@ -27,12 +27,12 @@
                             }
 
                     <div class="form">
-                        <img src="../img/login/homem-usuario.png" alt="homem">
+                        <img src="../img/index/homem-usuario.png" alt="homem">
                          @Html.TextBoxFor(funcionario => funcionario.CPF, new {@placeholder = "CPF"})
                     </div>
 
                     <div class="form">
-                        <img src="../img/login/chaves.png" alt="chaves">
+                        <img src="../img/index/chaves.png" alt="chaves">
                         @Html.PasswordFor(funcionario => funcionario.Senha, new {@placeholder = "Senha"})
                     </div>
                             

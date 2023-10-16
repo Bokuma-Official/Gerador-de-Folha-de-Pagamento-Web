@@ -20,14 +20,14 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public IActionResult index()
         {
             Funcionario_Login _funcionario_login = new Funcionario_Login();
             return View(_funcionario_login);
         }
 
         [HttpPost]
-        public IActionResult Login(Funcionario_Login _funcionario_login)
+        public IActionResult index(Funcionario_Login _funcionario_login)
         {
             Funcionario_Contexto _funcionario_contexto = new Funcionario_Contexto();
             var login = _funcionario_contexto.Funcionario.Where(funcionario => funcionario.CPF == _funcionario_login.CPF && funcionario.Senha == _funcionario_login.Senha).FirstOrDefault();
