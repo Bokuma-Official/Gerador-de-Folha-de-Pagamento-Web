@@ -6,17 +6,18 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Gerador_de_Folha_de_Pagamento_Web.Data;
 
 namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly Banco_Folha_Pagamento_Ataron_Contexto _contexto;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, Banco_Folha_Pagamento_Ataron_Contexto contexto)
         {
             _logger = logger;
+            _contexto = contexto;
         }
 
         [HttpGet]
@@ -29,8 +30,7 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
         [HttpPost]
         public IActionResult index(Funcionario_Login _funcionario_login)
         {
-            Funcionario_Contexto _funcionario_contexto = new Funcionario_Contexto();
-            var login = _funcionario_contexto.Funcionario.Where(funcionario => funcionario.CPF == _funcionario_login.CPF && funcionario.Senha == _funcionario_login.Senha).FirstOrDefault();
+            var login = _contexto.Funcionario.Where(funcionario => funcionario.CPF == _funcionario_login.CPF && funcionario.Senha == _funcionario_login.Senha).FirstOrDefault();
 
             if (login == null)
             {

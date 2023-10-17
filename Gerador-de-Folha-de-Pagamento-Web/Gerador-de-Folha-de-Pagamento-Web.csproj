@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Banco_Dados\ApplicationDbContext.cs" />
+    <Compile Remove="wwwroot\img\folha_pagamento\**" />
+    <Content Remove="wwwroot\img\folha_pagamento\**" />
+    <EmbeddedResource Remove="wwwroot\img\folha_pagamento\**" />
+    <None Remove="wwwroot\img\folha_pagamento\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,10 +21,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\img\folha_pagamento\" />
   </ItemGroup>
 
 </Project>
