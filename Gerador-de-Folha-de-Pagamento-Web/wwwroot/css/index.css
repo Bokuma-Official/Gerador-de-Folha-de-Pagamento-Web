@@ -1,19 +1,16 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
-img{
+img {
     height: 31px;
     margin: 10px;
     right: 50px;
-    
 }
 
-section{
+section {
     justify-content: center;
     position: relative;
     display: flex;
@@ -21,41 +18,39 @@ section{
     height: 100vh;
     width: 100vw;
     min-height: 200px;
-    
 }
 
-.form-box{
+.form-box {
     width: 500px;
     height: 550px;
     align-items: center;
     justify-content: center;
-    text-align: center; 
-    border: 3px solid black; 
+    text-align: center;
+    border: 3px solid black;
     border-radius: 30px;
 }
 
-.itens-box{
+.itens-box {
     margin-top: 10vh;
 }
-
 
 .logo img {
     height: 140px;
 }
 
-h2{
+h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-input{
+input {
     border-radius: 10px;
     border: 2px solid black;
     opacity: 70%;
 }
 
-.form{
+.form {
     position: relative;
     align-items: center;
     justify-content: center;
@@ -64,11 +59,9 @@ input{
     right: 1%;
     width: 400px;
     height: 30px;
-    
-    
 }
 
-.form label{
+.form label {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -77,35 +70,36 @@ input{
     top: 10%;
     left: 42%;
     color: gray;
-
 }
-label:hover{
+
+label:hover {
     opacity: 0%;
 }
+
 input:focus ~ label,
-input:focus ~ :valid{
+input:focus ~ :valid {
     opacity: 0%;
 }
 
-.form input{
+.form input {
     width: 90%;
     height: 40px;
-    
 }
-h3{
+
+h3 {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
     color: gray;
-
 }
-a{
+
+a {
     color: blue;
     text-decoration: none;
 }
 
-button{
+button {
     height: 45px;
     width: 120px;
     background: aquamarine;
@@ -114,11 +108,8 @@ button{
     font-size: 20px;
     border: 2px solid black;
     border-radius: 10px;
-
 }
+
 button:active {
     background: rgb(78, 115, 171);
 }
-
-
-
