@@ -61,43 +61,10 @@ input {
     height: 30px;
 }
 
-.form label {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    top: 10%;
-    left: 42%;
-    color: gray;
-}
-
-label:hover {
-    opacity: 0%;
-}
-
-input:focus ~ label,
-input:focus ~ :valid {
-    opacity: 0%;
-}
-
-.form input {
-    width: 90%;
-    height: 40px;
-}
-
-h3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    color: gray;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
-}
+    .form input {
+        width: 90%;
+        height: 40px;
+    }
 
 button {
     height: 45px;
@@ -108,8 +75,4 @@ button {
     font-size: 20px;
     border: 2px solid black;
     border-radius: 10px;
-}
-
-button:active {
-    background: rgb(78, 115, 171);
 }
