@@ -50,7 +50,7 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
             return View();
         }
 
-        public IActionResult Visualizar_Folhas_de_Pagamento()
+        public IActionResult Visualizar_Folhas_Pagamento()
         {
             return View();
         }
