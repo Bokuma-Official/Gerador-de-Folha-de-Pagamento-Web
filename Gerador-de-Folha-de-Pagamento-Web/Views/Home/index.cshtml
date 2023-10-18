@@ -9,18 +9,19 @@
 <section>
     <div class="form-box">
         <div class="itens-box">
+
             <div class="logo">
                 <img src="../img/logo.jfif" alt="logo_ataron">
             </div>
 
             <div class="formulario">
-                <h2>LOGIN</h2>
+                <h2>Login</h2>
         
                         @using (Html.BeginForm("index", "Home", FormMethod.Post))
                         {
-                            if (ViewBag.LoginStatus != null)
+                            if (ViewBag.login_funcionario != null)
                             {
-                                if (ViewBag.LoginStatus == 0)
+                                if (ViewBag.login_funcionario == 0)
                                 {
                                     <h1>CPF ou Senha Inválidos</h1>
                                 }
@@ -36,7 +37,7 @@
                         @Html.PasswordFor(funcionario => funcionario.Senha, new {@placeholder = "Senha"})
                     </div>
                             
-                    <button type="submit" value="Login" class="button">   Fazer Login   </button>
+                    <button type="submit" value="Login" class="button">Fazer Login</button>
                         }
             </div>
         </div>

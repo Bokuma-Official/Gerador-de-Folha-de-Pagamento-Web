@@ -61,10 +61,10 @@ input {
     height: 30px;
 }
 
-    .form input {
-        width: 90%;
-        height: 40px;
-    }
+.form input {
+    width: 90%;
+    height: 40px;
+}
 
 button {
     height: 45px;

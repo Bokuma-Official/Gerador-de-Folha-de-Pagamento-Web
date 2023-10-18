@@ -30,13 +30,6 @@ section{
     border-radius: 30px;
 }
 
-header{
-    display: inline-flex;
-    height: 10vh;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-
 .logo img{
    height: 140px;
     width: 140px; 
@@ -50,8 +43,14 @@ header{
     position: relative;
 }
 
-header h1{
-    font-size: 40px;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;

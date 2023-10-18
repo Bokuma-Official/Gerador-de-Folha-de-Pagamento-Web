@@ -1,9 +1,36 @@
-﻿@model Gerador_de_Folha_de_Pagamento_Web.Models.Folha_Pagamento
+﻿@model List<Gerador_de_Folha_de_Pagamento_Web.Models.Folha_Pagamento>
 @{
     ViewData["Title"] = "Visualizar Folhas de Pagamento";
 }
+
 <link rel="stylesheet" href="../css/folha_pagamento.css?version=1">
 <title>Visualizar Folhas de Pagamento</title>
 
-<h1>Visualizar Folhas de Pagamento</h1>
+<h2>Visualizar Folhas de Pagamento</h2>
 
+@foreach (var folha_pagamento in Model)
+{
+    <table>
+        <tr><th>Data de Pagamento</th><td>@folha_pagamento.Data_Pagamento</td></tr>
+        <tr><th>Horas Trabalhadas</th><td>@folha_pagamento.Horas_Trabalhadas</td></tr>
+        <tr><th>Valor por Hora</th><td>@folha_pagamento.Valor_Hora</td></tr>
+        <tr><th>Horas de Faltas</th><td>@folha_pagamento.Horas_Faltas</td></tr>
+        <tr><th>Desconto de Faltas</th><td>@folha_pagamento.Desconto_Horas_Faltas</td></tr>
+        <tr><th>Horas Extras</th><td>@folha_pagamento.Horas_Extras</td></tr>
+        <tr><th>Valor por Hora Extra</th><td>@folha_pagamento.Valor_Horas_Extras</td></tr>
+        <tr><th>Valor de Vale Transporte</th><td>@folha_pagamento.Valor_Vale_Transporte</td></tr>
+        <tr><th>Valor de Vale Alimentação</th><td>@folha_pagamento.Valor_Vale_Alimentacao</td></tr>
+        <tr><th>Desconto de INSS</th><td>@folha_pagamento.Desconto_INSS</td></tr>
+        <tr><th>Desconto de FGTS</th><td>@folha_pagamento.Desconto_FGTS</td></tr>
+        <tr><th>Desconto de IRRF</th><td>@folha_pagamento.Desconto_IRRF</td></tr>
+        <tr><th>Desconto de Vale Transporte</th><td>@folha_pagamento.Desconto_Vale_Transporte</td></tr>
+        <tr><th>Desconto de Vale Alimentação</th><td>@folha_pagamento.Desconto_Vale_Alimentacao</td></tr>
+        <tr><th>Desconto de Seguro Vida</th><td>@folha_pagamento.Desconto_Seguro_Vida</td></tr>
+        <tr><th>Dias de Férias</th><td>@folha_pagamento.Dias_Ferias</td></tr>
+        <tr><th>Valor de Férias</th><td>@folha_pagamento.Valor_Ferias</td></tr>
+        <tr><th>Valor de 13º Salário</th><td>@folha_pagamento.Valor_13_Salario</td></tr>
+        <tr><th>Salário Bruto</th><td>@folha_pagamento.Salario_Bruto</td></tr>
+        <tr><th>Salário Líquido</th><td>@folha_pagamento.Salario_Liquido</td></tr>
+    </table>
+    <hr/>
+}
