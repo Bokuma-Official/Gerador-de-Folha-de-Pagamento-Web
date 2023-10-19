@@ -18,6 +18,9 @@ section {
     height: 100vh;
     width: 100vw;
     min-height: 200px;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    
 }
 
 .form-box {
@@ -28,6 +31,8 @@ section {
     text-align: center;
     border: 3px solid black;
     border-radius: 30px;
+    background: transparent;
+    backdrop-filter:blur(10px)
 }
 
 .itens-box {
@@ -35,12 +40,14 @@ section {
 }
 
 .logo img {
-    height: 140px;
+    height: 120px;
+    width: 120px;
+    margin-bottom:5vh;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
     font-size: 30px;
 }
 
