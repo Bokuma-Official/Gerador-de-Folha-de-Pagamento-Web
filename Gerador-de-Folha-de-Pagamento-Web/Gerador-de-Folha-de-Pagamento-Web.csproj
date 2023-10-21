@@ -9,9 +9,13 @@
 
   <ItemGroup>
     <Compile Remove="wwwroot\img\folha_pagamento\**" />
+    <Compile Remove="wwwroot\js\**" />
     <Content Remove="wwwroot\img\folha_pagamento\**" />
+    <Content Remove="wwwroot\js\**" />
     <EmbeddedResource Remove="wwwroot\img\folha_pagamento\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
     <None Remove="wwwroot\img\folha_pagamento\**" />
+    <None Remove="wwwroot\js\**" />
   </ItemGroup>
 
   <ItemGroup>

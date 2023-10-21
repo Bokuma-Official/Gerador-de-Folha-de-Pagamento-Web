@@ -1,1 +1,41 @@
+*{
+    padding:0;
+    margin: 0;
+}
 
+h1{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    margin-top:10px;
+    margin-bottom: 100px;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-width: 100vw;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    width: 600px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    background: transparent;
+    backdrop-filter: blur(10px)
+}
+
+table{
+    border: 1px solid black;
+    
+
+}
+
+table td{
+    display:flex;
+}

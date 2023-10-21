@@ -68,6 +68,10 @@ input {
     height: 30px;
 }
 
+.@Html.TextBoxFor{
+
+}
+
 .form input {
     width: 90%;
     height: 40px;
@@ -76,7 +80,7 @@ input {
 button {
     height: 45px;
     width: 120px;
-    background: aquamarine;
+    background: #0078D7;
     margin-top: 10px;
     border: none;
     font-size: 20px;
