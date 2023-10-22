@@ -31,7 +31,6 @@ namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
             Cargo_Funcionario_Logado = null;
         }
 
-        // quando retornar a tela de login, zera as variáveis estáticas
         [HttpGet]
         public IActionResult index()
         {
