@@ -18,11 +18,7 @@ h1 {
 .header-itens{
     justify-content:center;
     align-items:center;
-    
 }
-
-
-
 
 header button {
     height: 40px;
@@ -47,7 +43,6 @@ section {
     display: flex;
     min-width: 100vw;
     background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -78,5 +73,3 @@ th, td {
     padding: 4px;
     text-align: left;
 }
-
-

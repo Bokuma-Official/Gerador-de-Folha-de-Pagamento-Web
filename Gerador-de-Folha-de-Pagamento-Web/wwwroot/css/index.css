@@ -12,6 +12,7 @@ img {
 
 section {
     justify-content: center;
+    text-align: center;
     position: relative;
     display: flex;
     align-items: center;
@@ -19,8 +20,7 @@ section {
     width: 100vw;
     min-height: 200px;
     background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    
+    background-size: cover;
 }
 
 .form-box {
@@ -43,12 +43,11 @@ section {
 .logo img {
     height: 120px;
     width: 120px;
-    margin-bottom:5vh;
+    margin-bottom: 3vh;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 5vh;
     font-size: 30px;
 }
 
@@ -68,9 +67,7 @@ input {
     right: 1%;
     width: 400px;
     height: 30px;
-
 }
-
 
 .form input {
     width: 90%;
