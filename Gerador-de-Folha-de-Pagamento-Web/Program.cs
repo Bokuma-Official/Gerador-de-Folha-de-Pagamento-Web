@@ -1,4 +1,4 @@
-using Gerador_de_Folha_de_Pagamento_Web.Controllers;
+using Gerador_de_Folha_de_Pagamento_Web.Models;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

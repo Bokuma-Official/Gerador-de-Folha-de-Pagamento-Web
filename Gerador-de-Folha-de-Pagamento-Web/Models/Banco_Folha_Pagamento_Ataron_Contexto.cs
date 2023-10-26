@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Gerador_de_Folha_de_Pagamento_Web.Models;
 using Microsoft.Extensions.Configuration;
 
-namespace Gerador_de_Folha_de_Pagamento_Web.Controllers
+namespace Gerador_de_Folha_de_Pagamento_Web.Models
 {
     public partial class Banco_Folha_Pagamento_Ataron_Contexto : DbContext
     {
